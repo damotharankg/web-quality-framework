@@ -1,0 +1,22 @@
+{
+  "name": "enterprise-portal-demo",
+  "version": "1.0.0",
+  "description": "Demo Web Application for testing Web Quality Framework",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "quality": "web-quality run",
+    "quality:vapt": "web-quality vapt",
+    "quality:e2e": "web-quality e2e",
+    "quality:console": "web-quality console",
+    "quality:deps": "web-quality deps",
+    "quality:ui": "web-quality ui"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "web-quality-framework": "file:../.."
+  }
+}
+

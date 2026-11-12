@@ -1,0 +1,61 @@
+{
+  "name": "web-quality-framework",
+  "version": "1.0.0",
+  "description": "Centralized, modular, scalable, and technology-independent Web Application Quality Framework for VAPT, E2E, Console Monitoring, Dependency Audits, and Frontend Quality.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "web-quality": "./bin/web-quality.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client/runtime-agent.js",
+      "types": "./dist/client/runtime-agent.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node --test tests/**/*.test.js",
+    "quality:audit": "node ./bin/web-quality.js run",
+    "quality:vapt": "node ./bin/web-quality.js vapt",
+    "quality:e2e": "node ./bin/web-quality.js e2e",
+    "quality:console": "node ./bin/web-quality.js console",
+    "quality:deps": "node ./bin/web-quality.js deps",
+    "quality:ui": "node ./bin/web-quality.js ui"
+  },
+  "keywords": [
+    "quality-framework",
+    "vapt",
+    "e2e-testing",
+    "console-monitoring",
+    "security-audit",
+    "dependency-audit",
+    "frontend-quality",
+    "react",
+    "vue",
+    "angular",
+    "nextjs"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "peerDependencies": {
+    "playwright": "^1.40.0"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  }
+}
+

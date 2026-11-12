@@ -1,0 +1,1 @@
+{"version":3,"file":"accessibility.d.ts","sourceRoot":"","sources":["../../../src/modules/frontend-quality/accessibility.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,uBAAuB,CAAC;AAE3D,qBAAa,oBAAoB;IACxB,SAAS,CAAC,IAAI,EAAE,MAAM,EAAE,OAAO,GAAE,MAAY,GAAG,kBAAkB,EAAE;CA8G5E"}
